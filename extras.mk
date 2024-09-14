@@ -1,4 +1,4 @@
-# extras typically found in lineage_garnet.mk
+# extras typically found in lineage_<device>.mk
 
 # ViPER4Android (if exists)
 $(call inherit-product-if-exists, packages/apps/ViPER4AndroidFX/config.mk)
