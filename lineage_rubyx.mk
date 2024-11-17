@@ -28,7 +28,15 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="ruby-user 14 UP1A.230620.001 V816.0.10.0.UMOMIXM release-keys" \
     BuildFingerprint=Redmi/ruby_global/ruby:14/UP1A.230620.001/V816.0.10.0.UMOMIXM:user/release-keys
 
-$(call inherit-product-if-exists, $(LOCAL_PATH)/extras.mk)
+# ViPER4Android (if exists)
+$(call inherit-product-if-exists, packages/apps/ViPER4AndroidFX/config.mk)
+
+# BCR (Basic Call Recorder) 
+$(call inherit-product, vendor/bcr/bcr.mk)
+
+# Dolby
+PRODUCT_PACKAGES += \
+    XiaomiDolby.rubyx
 
 PRODUCT_PACKAGES += \
     EvolutionSettingsOverlayRuby
