@@ -30,3 +30,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := Redmi/ruby_global/ruby:14/UP1A.231005.007/V816.0.4.0.UMOMIXM:user/release-keys
 
 $(call inherit-product-if-exists, $(LOCAL_PATH)/extras.mk)
+
+PRODUCT_PACKAGES += \
+    EvolutionSettingsOverlayRuby
